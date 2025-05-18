@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaaL</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<a href="https://wa.me/5512992530190" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        width: 60px;
+        height: 60px;
+        background: #25D366;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1) translateY(-5px);
+        box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+    }
+</style>
+
+<body>
+    <header class="glass-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="/" class="logo-typography">
+                    <span class="logo-mark">T</span>
+                    <span class="logo-text">AAL</span>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contato" class="cta-button">Orçamento</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section id="home" class="hero-section">
+        <div class="hero-video-overlay"></div>
+
+        <!-- Opcional: Vídeo de fundo -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="./src/videos/construction.mp4" type="video/mp4">
+            <!-- Fallback para imagem caso vídeo não carregue -->
+            <img src="./src/img/img.jpg" loading="lazy" alt="Background construção">
+        </video>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Obras e Serviços Integrados</h1>
+                <p class="hero-subtitle">Soluções completas em Caça Vazamento, Obras e Reformas!</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>+
+                        <span class="stat-label">Projetos Concluídos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span>+
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>%
+                        <span class="stat-label">Satisfação dos Clientes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#contato" class="cta-btn primary-btn">
+                    <i class="fas fa-phone-alt"></i> Solicitar Orçamento
+                </a>
+                <a href="#servicos" class="cta-btn secondary-btn">
+                    <i class="fas fa-clipboard-list"></i> Nossos Serviços
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <i class="fas fa-tint"></i>
+                <h3>Caça Vazamento</h3>
+                <p>Soluções rápidas e precisas para evitar desperdícios e danos!</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-hammer"></i>
+                <h3>Obras e Reformas </h3>
+                <p>Transformando espaços com qualidade, inovação e eficiência!</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-leaf"></i>
+                <h3>Jardinagem</h3>
+                <p>Cultivando beleza e harmonia em cada detalhe do seu espaço verde!</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-file-alt"></i>
+                <h3>Laudos Periciais</h3>
+                <p>Avaliações detalhadas e imparciais para fundamentar decisões e assegurar a verdade!</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-clipboard-check"></i>
+                <h3>Assessoria Técnica</h3>
+                <p>Suporte especializado para garantir a qualidade e a segurança em todas as suas decisões!</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-paint-roller"></i>
+                <h3>Pinturas especiais</h3>
+                <p>Acabamentos exclusivos que transformam e protegem superfícies com estilo e durabilidade!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects-section">
+        <div class="section-header">
+            <h2>Nossos Projetos em Destaque</h2>
+            <p class="section-subtitle">Transformando ideias em realidade com excelência</p>
+        </div>
+
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="cacavazamento">Caça Vazamento</button>
+            <button class="filter-btn" data-filter="reformas">Reformas</button>
+            <button class="filter-btn" data-filter="pinturas">Pinturas</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Projeto 1 com múltiplas imagens (carrossel) -->
+            <div class="project-card" data-category="reformas">
+                <div class="project-gallery">
+                    <div class="gallery-slider">
+                        <div class="slide active" data-images='[
+                            {"url":"./src/img/projref1.jpg","title":"Reforma Residencial - Foto 1"},
+                            {"url":"./src/img/projref1.2.jpg","title":"Reforma Residencial - Foto 2"}
+                        ]'>
+                            <img src="./src/img/projref1.jpg" alt="Reforma residencial - Foto 1" loading="lazy">
+                        </div>
+                        <div class="slide" data-images='[
+                            {"url":"./src/img/projref1.jpg","title":"Reforma Residencial - Foto 1"},
+                            {"url":"./src/img/projref1.2.jpg","title":"Reforma Residencial - Foto 2"}
+                        ]'>
+                            <img src="./src/img/projref1.2.jpg" alt="Reforma residencial - Foto 2" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="dots-container"></div>
+                        <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Reformas</span>
+                    <h3>Casa Moderna - Taubaté-SP </h3>
+                    <p>Reforma completa com integração de ambientes e acabamentos premium.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+
+            <div class="project-card" data-category="cacavazamento">
+                <div class="project-gallery">
+                    <div class="gallery-slider">
+                        <div class="slide active" data-images='[
+                            {"url":"./src/img/img1proj2.jpg","title":"Caça vazamentos - Foto 1"},
+                            {"url":"./src/img/img2proj2.jpg","title":"Caça vazamentos - Foto 2"},
+                            {"url":"./src/img/img3proj2.jpg","title":"Caça vazamentos - Foto 3"},
+                            {"url":"./src/img/img4proj2.jpg","title":"Caça vazamentos - Foto 4"}
+                        ]'>
+                            <img src="./src/img/img1proj2.jpg" alt="Caça vazamentos - Foto 1" loading="lazy">
+                        </div>
+                        <div class="slide" data-images='[
+                            {"url":"./src/img/img1proj2.jpg","title":"Caça vazamentos - Foto 1"},
+                            {"url":"./src/img/img2proj2.jpg","title":"Caça vazamentos - Foto 2"},
+                            {"url":"./src/img/img3proj2.jpg","title":"Caça vazamentos - Foto 3"},
+                            {"url":"./src/img/img4proj2.jpg","title":"Caça vazamentos - Foto 4"}
+                        ]'>
+                            <img src="./src/img/img2proj2.jpg" alt="Caça vazamentos - Foto 2" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="dots-container"></div>
+                        <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Caça Vazamentos</span>
+                    <h3>Residencial - Taubaté-SP</h3>
+                    <p>Localização e conserto de vazamento em lavanderia e reposição de todo o revestimento.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+
+            <div class="project-card" data-category="cacavazamento">
+                <div class="project-gallery">
+                    <div class="gallery-slider">
+                        <div class="slide active" data-images='[
+                            {"url":"./src/img/p3/p31.jpg","title":"Caça vazamentos - Foto 1"},
+                            {"url":"./src/img/p3/p32.jpg","title":"Caça vazamentos - Foto 2"},
+                            {"url":"./src/img/p3/p33.jpg","title":"Caça vazamentos - Foto 3"},
+                            {"url":"./src/img/p3/p34.jpg","title":"Caça vazamentos - Foto 4"},
+                            {"url":"./src/img/p3/p35.jpg","title":"Caça vazamentos - Foto 5"},
+                            {"url":"./src/img/p3/p36.jpg","title":"Caça vazamentos - Foto 6"},
+                            {"url":"./src/img/p3/p37.jpg","title":"Caça vazamentos - Foto 7"},
+                            {"url":"./src/img/p3/p38.jpg","title":"Caça vazamentos - Foto 8"},
+                            {"url":"./src/img/p3/p39.jpg","title":"Caça vazamentos - Foto 9"},
+                            {"url":"./src/img/p3/p40.jpg","title":"Caça vazamentos - Foto 10"},
+                            {"url":"./src/img/p3/p41.jpg","title":"Caça vazamentos - Foto 11"},
+                            {"url":"./src/img/p3/p42.jpg","title":"Caça vazamentos - Foto 12"},
+                            {"url":"./src/img/p3/p43.jpg","title":"Caça vazamentos - Foto 13"},
+                            {"url":"./src/img/p3/p44.jpg","title":"Caça vazamentos - Foto 14"},
+                            {"url":"./src/img/p3/p45.jpg","title":"Caça vazamentos - Foto 15"},
+                            {"url":"./src/img/p3/p46.jpg","title":"Caça vazamentos - Foto 16"},
+                            {"url":"./src/img/p3/p47.jpg","title":"Caça vazamentos - Foto 17"},
+                            {"url":"./src/img/p3/p48.jpg","title":"Caça vazamentos - Foto 18"},
+                            {"url":"./src/img/p3/p49.jpg","title":"Caça vazamentos - Foto 19"},
+                            {"url":"./src/img/p3/p50.jpg","title":"Caça vazamentos - Foto 20"},
+                            {"url":"./src/img/p3/p51.jpg","title":"Caça vazamentos - Foto 21"},
+                            {"url":"./src/img/p3/p52.jpg","title":"Caça vazamentos - Foto 22"}
+                        ]'>
+                            <img src="./src/img/p3/p31.jpg" alt="Caça vazamentos - Foto 1" loading="lazy">
+                        </div>
+                        <div class="slide" data-images='[
+                            {"url":"./src/img/p3/p31.jpg","title":"Caça vazamentos - Foto 1"},
+                            {"url":"./src/img/p3/p32.jpg","title":"Caça vazamentos - Foto 2"},
+                            {"url":"./src/img/p3/p33.jpg","title":"Caça vazamentos - Foto 3"},
+                            {"url":"./src/img/p3/p34.jpg","title":"Caça vazamentos - Foto 4"},
+                            {"url":"./src/img/p3/p35.jpg","title":"Caça vazamentos - Foto 5"},
+                            {"url":"./src/img/p3/p36.jpg","title":"Caça vazamentos - Foto 6"},
+                            {"url":"./src/img/p3/p37.jpg","title":"Caça vazamentos - Foto 7"},
+                            {"url":"./src/img/p3/p38.jpg","title":"Caça vazamentos - Foto 8"},
+                            {"url":"./src/img/p3/p39.jpg","title":"Caça vazamentos - Foto 9"},
+                            {"url":"./src/img/p3/p40.jpg","title":"Caça vazamentos - Foto 10"},
+                            {"url":"./src/img/p3/p41.jpg","title":"Caça vazamentos - Foto 11"},
+                            {"url":"./src/img/p3/p42.jpg","title":"Caça vazamentos - Foto 12"},
+                            {"url":"./src/img/p3/p43.jpg","title":"Caça vazamentos - Foto 13"},
+                            {"url":"./src/img/p3/p44.jpg","title":"Caça vazamentos - Foto 14"},
+                            {"url":"./src/img/p3/p45.jpg","title":"Caça vazamentos - Foto 15"},
+                            {"url":"./src/img/p3/p46.jpg","title":"Caça vazamentos - Foto 16"},
+                            {"url":"./src/img/p3/p47.jpg","title":"Caça vazamentos - Foto 17"},
+                            {"url":"./src/img/p3/p48.jpg","title":"Caça vazamentos - Foto 18"},
+                            {"url":"./src/img/p3/p49.jpg","title":"Caça vazamentos - Foto 19"},
+                            {"url":"./src/img/p3/p50.jpg","title":"Caça vazamentos - Foto 20"},
+                            {"url":"./src/img/p3/p51.jpg","title":"Caça vazamentos - Foto 21"},
+                            {"url":"./src/img/p3/p52.jpg","title":"Caça vazamentos - Foto 22"}
+                        ]'>
+                            <img src="./src/img/p3/p32.jpg" alt="Caça vazamentos - Foto 2" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="dots-container"></div>
+                        <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Caça Vazamentos</span>
+                    <h3>SESI - CuzeiroSP</h3>
+                    <p>Caça vazamento em rede de grande diâmetro, que abastece sistema contra incêndio.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 4 -->
+
+            <div class="project-card" data-category="pinturas">
+                <div class="project-gallery">
+                    <div class="gallery-slider">
+                        <div class="slide active" data-images='[
+                            {"url":"./src/img/p4/p41.jpg","title":"Pinturas - Foto 1"},
+                            {"url":"./src/img/p4/p42.jpg","title":"Pinturas - Foto 2"},
+                            {"url":"./src/img/p4/p43.jpg","title":"Pinturas - Foto 3"},
+                            {"url":"./src/img/p4/p45.jpg","title":"Pinturas - Foto 4"},
+                            {"url":"./src/img/p4/p46.jpg","title":"Pinturas - Foto 5"},
+                            {"url":"./src/img/p4/p47.jpg","title":"Pinturas - Foto 6"},
+                            {"url":"./src/img/p4/p48.jpg","title":"Pinturas - Foto 7"},
+                            {"url":"./src/img/p4/p49.jpg","title":"Pinturas - Foto 8"}
+                        ]'>
+                            <img src="./src/img/p4/p41.jpg" alt="Pinturas - Foto 1" loading="lazy">
+                        </div>
+                        <div class="slide" data-images='[
+                            {"url":"./src/img/p4/p41.jpg","title":"Pinturas - Foto 1"},
+                            {"url":"./src/img/p4/p42.jpg","title":"Pinturas - Foto 2"},
+                            {"url":"./src/img/p4/p43.jpg","title":"Pinturas - Foto 3"},
+                            {"url":"./src/img/p4/p45.jpg","title":"Pinturas - Foto 4"},
+                            {"url":"./src/img/p4/p46.jpg","title":"Pinturas - Foto 5"},
+                            {"url":"./src/img/p4/p47.jpg","title":"Pinturas - Foto 6"},
+                            {"url":"./src/img/p4/p48.jpg","title":"Pinturas - Foto 7"},
+                            {"url":"./src/img/p4/p49.jpg","title":"Pinturas - Foto 8"}
+                        ]'>
+                            <img src="./src/img/p4/p42.jpg" alt="Pinturas - Foto 2" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="dots-container"></div>
+                        <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Pinturas</span>
+                    <h3>Condomínio - Taubaté-SP</h3>
+                    <p>Pintura em área externa.</p>
+                </div>
+            </div>
+
+            <!-- Projeto com imagem única (compatibilidade)
+            <div class="project-card" data-category="eletrica">
+                <div class="project-image">
+                    <img src="./src/img/imgpiso2.jpg" alt="Instalação elétrica" loading="lazy">
+                    <div class="project-overlay">
+                        <h3>Instalação Elétrica</h3>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Elétrica</span>
+                    <h3>Comercial - Centro</h3>
+                    <p>Sistema elétrico completo para loja de alto padrão.</p>
+                </div>
+            </div> -->
+
+            <!-- Adicione mais projetos conforme necessário -->
+        </div>
+
+        <div class="cta-projects">
+            <p>Entre em contato para dúvidas!</p>
+            <a href="#contato" class="btn">Fale conosco</a>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close-btn">&times;</span>
+        <div class="modal-content">
+            <div class="modal-nav">
+                <button class="modal-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="modal-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <img class="modal-img" src="" alt="">
+            <div class="modal-gallery"></div>
+            <div class="modal-caption"></div>
+            <!-- Adicione este elemento para o indicador mobile -->
+            <div class="mobile-indicator">
+                <span class="current-img">1</span>/<span class="total-imgs">3</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="sobre" class="about-section">
+        <!-- Conteúdo em formato de timeline moderna -->
+        <div class="about-timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <h3>Nossa Jornada</h3>
+                    <p>Fundada em 2024, a TAAL surgiu da paixão por transformar espaços. Hoje somos referência em Taubaté-SP e região.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Diferenciais</h3>
+                    <ul class="feature-list">
+                        <li>Equipe técnica especializada.</li>
+                        <li>Tecnologia de detecção de vazamentos.</li>
+                        <li>Materiais premium.</li>
+                        <li>Gestão ágil de projetos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Missão, Visão e Valores em cards interativos -->
+        <div class="mvw-grid">
+            <div class="mvw-card" tabindex="0">
+                <div class="card-header">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Missão</h3>
+                </div>
+                <div class="card-content">
+                    <p>Entregar aos nossos clientes, serviços e soluções inovadoras que atendem às suas necessidades,
+                        com agilidade, qualidade, segurança e transparência. Dedicamo-nos à melhor prática de governança, com foco no meio ambiente e satisfação dos nossos colaboradores e parceiros.</p>
+                </div>
+            </div>
+
+            <div class="mvw-card" tabindex="0">
+                <div class="card-header">
+                    <i class="fas fa-eye"></i>
+                    <h3>Visão</h3>
+                </div>
+                <div class="card-content">
+                    <p>Ser uma empresa competente e otimizada com olhar crítico em compliance, que nos permita enfrentar
+                        os desafios, superando as expectativas dos nossos clientes, possibilitando um crescimento sólido e a expansão da nossa marca.</p>
+                </div>
+            </div>
+
+            <div class="mvw-card" tabindex="0">
+                <div class="card-header">
+                    <i class="fas fa-heart"></i>
+                    <h3>Valores</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="values-list">
+                        <li><span>Integridade</span> - Agimos com ética e transparência nas nossas atividades.</li>
+                        <li><span>Inovação</span> - Inovar processos e serviços com foco nas necessidades dos nossos
+                            clientes.</li>
+                        <li><span>Sustentabilidade</span> - Aplicar os conceitos de sustentabilidade e compliance nas
+                            relações internas e externas.</li>
+                        <li><span>Excelência</span> - Qualidade em cada detalhe.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipe (opcional) -->
+        <div class="team-section">
+            <h3>Responsável Técnico</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Engenheira Civíl</h4>
+                    <p>Crea: 5070418712</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="contato" class="contact-minimal">
+        <div class="contact-container">
+            <!-- Título Simples -->
+            <h2 class="section-title">Contato</h2>
+            <p class="section-subtitle" style="opacity: 1; display: block; margin-bottom: 2rem;">Fale conosco pelos
+                canais abaixo</p>
+
+            <!-- Cards de Contato -->
+            <div class="contact-cards">
+                <!-- Telefone -->
+                <a href="tel:+5512992530190" class="contact-card phone">
+                    <div class="card-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Telefone</h3>
+                        <p>(12)992530190</p>
+                        <span class="card-link">Ligar agora</span>
+                    </div>
+                </a>
+
+                <!-- E-mail -->
+                <a href="taalservicos@outlook.com" class="contact-card email">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>E-mail</h3>
+                        <p>taalservicos@outlook.com</p>
+                        <span class="card-link">Enviar mensagem</span>
+                    </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/vemsertaal_servicos/" target="_blank" class="contact-card instagram">
+                    <div class="card-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Instagram</h3>
+                        <p>@vemsertaal_servicos</p>
+                        <span class="card-link">Seguir</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-simplificado">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna de Serviços -->
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Caça Vazamentos</a></li>
+                        <li><a href="#">Reformas Residenciais</a></li>
+                        <li><a href="#">Jardinagem</a></li>
+                        <li><a href="#">Laudos Técnicos</a></li>
+                        <li><a href="#">Pinturas Especiais</a></li>
+                        <li><a href="#">Acessoria Técnica</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Coluna de Contatos -->
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone-alt"></i> (12) 9 9253 0190</p>
+                        <p><i class="fas fa-envelope"></i> taalservicos@outlook.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Taubaté-SP</p>
+                    </div>
+                </div>
+
+                <!-- Coluna de Redes Sociais -->
+                <div class="footer-col">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/vemsertaal_servicos/" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5512992530190" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 TaaL - Obras e serviços integrados. </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
+</body>
+
+<span class="sr-only">Fale conosco no WhatsApp</span>
+
+</html>
